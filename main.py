@@ -1,13 +1,18 @@
 # Author : Aman Akhter
 
-# Importing the request module with alias req
+# Importing the required modules
+import os
 import requests as req
+from dotenv import load_dotenv
+
+# Loading the .env file into the environment
+load_dotenv()
 
 # Taking user input of city
 city = input("Enter the name of the city : ")
 
-# API KEY
-api_key = ""
+# Getting the API KEY from the environment
+api_key = os.getenv("API_KEY")
 
 # GETTING THE GEOLOCATION (Latitude and Longitude)
 
