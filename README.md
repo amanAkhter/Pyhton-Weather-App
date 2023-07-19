@@ -14,3 +14,7 @@ Make a `.env` file and add an environment variable in the application or add the
 ---
 
 `API Key` is not provided in the repo
+
+---
+## Important : 
+If `API_KEY` is getting used as a system environment variable and `.env` file is not being used then comment out `load_dotenv()` in the `9th` line
